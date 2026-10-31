@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#2c0051", "on-surface-variant": "#cfc2d6", "outline": "#988d9f", "on-surface": "#e4e1e6", "error-container": "#93000a", "on-secondary-fixed-variant": "#5a00c6", "primary": "#ddb7ff", "tertiary": "#dcb8ff", "surface-container": "#1f1f22", "surface-container-lowest": "#0e0e11", "on-tertiary-container": "#3f0072", "tertiary-fixed-dim": "#dcb8ff", "on-secondary": "#3f008e", "outline-variant": "#4d4354", "surface-bright": "#39393c", "inverse-on-surface": "#303033", "surface-dim": "#131316", "error": "#ffb4ab", "on-primary-fixed-variant": "#6900b3", "surface-container-high": "#2a2a2d", "on-background": "#e4e1e6", "on-error-container": "#ffdad6", "on-primary-container": "#400071", "secondary-fixed": "#eaddff", "on-error": "#690005", "on-tertiary": "#480081", "on-tertiary-fixed-variant": "#6700b5", "secondary-fixed-dim": "#d2bbff", "background": "#131316", "surface-container-highest": "#353438", "surface": "#131316", "on-secondary-fixed": "#25005a", "primary-fixed-dim": "#ddb7ff", "on-primary": "#490080", "inverse-surface": "#e4e1e6", "secondary": "#d2bbff", "primary-fixed": "#f0dbff", "tertiary-fixed": "#efdbff", "surface-container-low": "#1b1b1e", "primary-container": "#b76dff", "tertiary-container": "#b56eff", "inverse-primary": "#842bd2", "surface-variant": "#353438", "secondary-container": "#6001d1", "surface-tint": "#ddb7ff", "on-secondary-container": "#c9aeff", "on-primary-fixed": "#2c0051" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "margin": "1.5rem" }, "fontFamily": { "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "display-lg": ["48px", { "lineHeight": "56px", "fontWeight": "800" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#131316;color:#e4e1e6;}body{overscroll-behavior-y:none;min-height:100vh;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}*{-ms-overflow-style:none;scrollbar-width:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)]"><div class="flex items-center justify-between px-margin-mobile h-6 text-on-surface-variant font-label-sm text-label-sm select-none"><span class="font-semibold tracking-tight text-on-surface">9:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[14px]">wifi</span><span class="material-symbols-outlined text-[14px]">battery_full</span></div></div><div class="h-14 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="SK Demand Brand Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VT79UDXf7PTy8gyxBmzyFY69HYSQlLozOAs7WxmTz6C_dOt5LCVoZy_NvqdL-i5hDZPhQWmG8UwJM34snHgXWrgaqiSmwhnjwpTTFIFZRIJCR0gQ00Lsdob0JTDE-h2OtudzhTj0mL3Pv92fPB2IQbp54a_KUt9_xBAQ0uYCrO7av5lPAtj40OJWbSx4Q79eyKWPkyrfziNZX7dMrOgnN_p914EW-kSdDkY-o_nso"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary truncate">SK DEMAND</span><span class="font-headline-sm text-headline-sm text-on-surface truncate">Search</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors active:scale-95"><span class="material-symbols-outlined">notifications</span></button><button class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors active:scale-95"><span class="material-symbols-outlined">settings</span></button><a class="ml-space-xs flex items-center justify-center focus:outline-none" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/40 hover:ring-primary transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGjNAcLCFEybkMJCk01NXyuJ5Hpjpa-HSUnMdOqMQCajojX_EHm2l752JRo8APsJiZNGCCNYRrszcyztYIeZdablxyW3oeAjf8g3wJxx7VvS02sM-ZnwsM9h07GocOvfMADEB9_DZD0oLNmteWnyJjlSKpthR1IKwlKd8IlqRxyMhCvPBYITyw7Rg2fkUG42WaCIkfAZ2KPzDnjRU2tE7uixRsFWzr8ssKVtknqRo"/></a></div></div></header><main class="flex-1 w-full bg-surface pt-20 pb-44 px-margin-mobile flex flex-col"><div class="flex flex-col w-full gap-space-lg select-none">
+<!-- Interactive Pill Search Container -->
+<section class="flex flex-col gap-space-sm w-full">
+<div class="relative flex items-center w-full bg-surface-container-high rounded-full px-space-md py-space-xs shadow-md transition-all focus-within:bg-surface-container-highest focus-within:shadow-[0_0_20px_rgba(183,109,255,0.35)]">
+<span class="material-symbols-outlined text-outline text-[22px] flex-shrink-0 transition-colors mr-space-xs" id="search-icon">search</span>
+<input class="w-full bg-transparent text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none min-w-0" id="search-input" placeholder="What do you want to play? Songs, artists..." type="text" value="Neon Pulsar"/>
+<div class="flex items-center gap-space-xs flex-shrink-0 ml-space-xs">
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface transition-colors active:scale-90" id="clear-btn" title="Clear search">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="w-[1px] h-4 bg-outline-variant/60"></div>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-primary hover:text-on-surface transition-transform active:scale-90" title="Voice Search">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+</div>
+<!-- Filter Category Pills (Scrollable Row) -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-space-xs -mx-margin-mobile px-margin-mobile no-scrollbar" id="category-tabs">
+<button class="category-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-gradient-to-r from-secondary-container to-primary-container text-white shadow-[0_0_14px_rgba(183,109,255,0.4)] flex-shrink-0 active:scale-95 transition-all">
+        Top Results
+      </button>
+<button class="category-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface flex-shrink-0 active:scale-95 transition-all">
+        Songs
+      </button>
+<button class="category-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface flex-shrink-0 active:scale-95 transition-all">
+        Artists
+      </button>
+<button class="category-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface flex-shrink-0 active:scale-95 transition-all">
+        Albums
+      </button>
+<button class="category-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface flex-shrink-0 active:scale-95 transition-all">
+        Playlists
+      </button>
+<button class="category-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface flex-shrink-0 active:scale-95 transition-all">
+        Podcasts
+      </button>
+</div>
+</section>
+<!-- Section 1: Recent Searches -->
+<section class="flex flex-col gap-space-sm w-full" id="recent-searches-section">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">history</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Recent Searches</h2>
+</div>
+<button class="font-label-sm text-label-sm text-outline hover:text-primary transition-colors uppercase tracking-wider active:scale-95" id="clear-all-recents">Clear All</button>
+</div>
+<div class="flex flex-wrap gap-space-xs" id="recent-chips">
+<div class="group flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-on-surface transition-all active:scale-95 hover:bg-surface-container-high">
+<span class="font-label-md text-label-md font-medium text-primary">Neon Pulsar</span>
+<button class="chip-delete flex items-center justify-center w-5 h-5 rounded-full hover:bg-surface-container-highest text-outline hover:text-error transition-colors" title="Delete entry">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<div class="group flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-on-surface transition-all active:scale-95 hover:bg-surface-container-high">
+<span class="font-label-md text-label-md font-medium">Aura Echoes Lossless</span>
+<button class="chip-delete flex items-center justify-center w-5 h-5 rounded-full hover:bg-surface-container-highest text-outline hover:text-error transition-colors" title="Delete entry">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<div class="group flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-on-surface transition-all active:scale-95 hover:bg-surface-container-high">
+<span class="font-label-md text-label-md font-medium">Synthwave 2025</span>
+<button class="chip-delete flex items-center justify-center w-5 h-5 rounded-full hover:bg-surface-container-highest text-outline hover:text-error transition-colors" title="Delete entry">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<div class="group flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-on-surface transition-all active:scale-95 hover:bg-surface-container-high">
+<span class="font-label-md text-label-md font-medium">Late Night Violet</span>
+<button class="chip-delete flex items-center justify-center w-5 h-5 rounded-full hover:bg-surface-container-highest text-outline hover:text-error transition-colors" title="Delete entry">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 2: Trending Searches & Rising Tracks -->
+<section class="flex flex-col gap-space-sm w-full">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">trending_up</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Trending &amp; Rising</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider px-space-xs py-0.5 rounded bg-primary/10">Live Radar</span>
+</div>
+<!-- Track List -->
+<div class="flex flex-col gap-space-xs w-full">
+<!-- Item #1: Featuring Neon Pulsar style cover -->
+<div class="flex items-center justify-between p-space-xs rounded-xl bg-surface-container-low hover:bg-surface-container active:scale-[0.99] transition-all group">
+<div class="flex items-center gap-space-sm min-w-0 flex-1">
+<span class="font-label-lg text-label-lg font-extrabold text-primary w-5 text-center flex-shrink-0">01</span>
+<div class="relative w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-highest shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Futuristic cybernetic crystalline polyhedron hovering in deep cosmic space, emitting radiant neon violet and cyan laser beams with purple nebula clouds and retro grid horizon, hyper-detailed synthwave aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa-K3-OgMzuRNnil3fRkcSxewfxfjUDsWsf9pU48NH8enMDNrks-0UN0j5JeTTmvducAQMreAji9qFnqp4ZJmkksonYqGNGuks9BjGmQdPDe2e6z09gzhOZDMaNfb7iq4AIE_-sTRIZ-eKxnWOJKWOCAVb3_5Ufr05zm-sujNcgbfl0pDbkZ8ylv96MIuq-LJ01JU1CT0hNtM-GqzuRBJOPioTrQhvyzHRLztR7i8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim/70 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Cybernetic Void</span>
+<span class="font-label-sm text-label-sm px-1 rounded bg-secondary-container/60 text-secondary-fixed text-[9px] font-extrabold">HI-RES</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Neon Pulsar • 1.4M plays</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary active:scale-90 transition-colors" title="Favorite">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md active:scale-90 transition-transform" title="Play">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Item #2 -->
+<div class="flex items-center justify-between p-space-xs rounded-xl bg-surface-container-low hover:bg-surface-container active:scale-[0.99] transition-all group">
+<div class="flex items-center gap-space-sm min-w-0 flex-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface-variant w-5 text-center flex-shrink-0">02</span>
+<div class="relative w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-highest shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Abstract holographic liquid mercury sphere swirling with electric violet and magenta reflections inside a dark velvet room, moody studio lighting with volumetric fog" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApM3EB2nvwGReKVcSxmrvBOa9k5lrT75Zxxtn8xWkQChqX0WUg0qw0UbcK4QKsx7PJiD-bsy5RVGZKVPiFCkPgN-3p89TTanzT44ZH2ukAfPUasF9u8hKmxezK7__6T_1P9R5DfqichQ6lcTHgiFxLmTNdxQC-YNgotS_n-4yVaOMpP1vsfvYh5Eh4xQDmTKbJSe-x3s_8BiyN0v-yxEvOG11FI_zXAVULL_CItvs"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Prism Horizon</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Vapor Mirage • 892K plays</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary active:scale-90 transition-colors" title="Favorite">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center active:scale-90 transition-transform hover:bg-primary-container hover:text-on-primary-container" title="Play">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Item #3 -->
+<div class="flex items-center justify-between p-space-xs rounded-xl bg-surface-container-low hover:bg-surface-container active:scale-[0.99] transition-all group">
+<div class="flex items-center gap-space-sm min-w-0 flex-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface-variant w-5 text-center flex-shrink-0">03</span>
+<div class="relative w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-highest shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Moody dark cityscape at night illuminated by glowing neon purple and pink billboards, rain glistening on reflective asphalt streets in an anime cinematic cyberpunk style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF94w-ocoHCE-p5Iys5ne40HovKPUZXCJ7XRCeNrDHGBQh2gA4ejVIiaRREIM8Jw1VTsxi4nJZUYVQ9UpyvSZJZpT0O42CD21zqdb9dRVgn8ZMzzCfIZmDbT3DQbcQc3U47TOQVRm-rDwYF8OrXRze8RcgVAJGVx50Ux6WSYkRVaHYtYcPJzeahBQw_enKosADuT7ZOFRtFCyt7Rky0Fh0-oyOyY1cRinJAdj3oeQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Midnight Drift</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Kavinsky Core • 620K plays</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary active:scale-90 transition-colors" title="Favorite">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center active:scale-90 transition-transform hover:bg-primary-container hover:text-on-primary-container" title="Play">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Explore All Genres & Moods -->
+<section class="flex flex-col gap-space-sm w-full">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">grid_view</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Explore Genres &amp; Moods</h2>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:text-secondary-fixed transition-colors active:scale-95">See All</button>
+</div>
+<!-- 2-Column Bento Card Grid with Angled Covers -->
+<div class="grid grid-cols-2 gap-space-sm w-full">
+<!-- Card 1: Electronic & EDM -->
+<div class="relative overflow-hidden h-28 rounded-xl bg-gradient-to-br from-secondary-container via-surface-container-high to-surface-container-low p-space-sm flex flex-col justify-between shadow-md active:scale-[0.98] transition-all cursor-pointer group">
+<div class="z-10 flex flex-col">
+<span class="font-label-lg text-label-lg font-extrabold text-white leading-tight drop-shadow-sm">Electronic &amp; EDM</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim">Club &amp; Rave</span>
+</div>
+<div class="absolute -right-3 -bottom-3 w-16 h-16 rounded-lg overflow-hidden rotate-[24deg] shadow-[0_8px_16px_rgba(0,0,0,0.6)] group-hover:rotate-[15deg] group-hover:scale-110 transition-all pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Geometric glowing purple lasers cutting through a smoky underground electronic music warehouse rave, intense dynamic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOShyVjnkUZk8jMWGrBLIl6Q87gtgmpoujyrDdUDwKza17nJVi_iLmfT_3oFkiy6cjQgoOlEBCsj95mKL24QhctYW5Do64bhpQK2rjr6zMUr1SoZjwty8UjLnJlJpH1VtnNS52MjIBowp-8bWLVO6qPTg6IQzVCrf7Y_pMsgoVSc2KbQZKJ78UWmxy8SV42dTxjqSKA5aB1RLWF19tpebAjrY-9pBWH-BunTXOBpE"/>
+</div>
+</div>
+<!-- Card 2: Synthwave & Cyber -->
+<div class="relative overflow-hidden h-28 rounded-xl bg-gradient-to-br from-[#4c1d95] via-surface-container-high to-surface-container-low p-space-sm flex flex-col justify-between shadow-md active:scale-[0.98] transition-all cursor-pointer group">
+<div class="z-10 flex flex-col">
+<span class="font-label-lg text-label-lg font-extrabold text-white leading-tight drop-shadow-sm">Synthwave &amp; Cyber</span>
+<span class="font-label-sm text-label-sm text-primary">Retro Neon</span>
+</div>
+<div class="absolute -right-3 -bottom-3 w-16 h-16 rounded-lg overflow-hidden rotate-[24deg] shadow-[0_8px_16px_rgba(0,0,0,0.6)] group-hover:rotate-[15deg] group-hover:scale-110 transition-all pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Luminescent chrome 80s supercar parked in front of a giant digital magenta sun on a wireframe vector desert road" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqDcltpRIj1OZjX_7Fhozp_5wCOk3ugGwEvYPpDnaib2js7wh6hSoL-b-MkqQmGa84EmtBGUP69oHAg3-P6_jMes2KYw3OrXFUAM9Zi_RDdbWeP_MHzzbJT8RHK-yrI2YXyd8LVNyCfqVwlzZz4w2pTcrqTlnmKVVlB4zbzutr1IG4JBcanWSmIJS0eZNJPIlf-uEibm7JgKY9aRax9r8om0Vm6eBIxvG1arczpew"/>
+</div>
+</div>
+<!-- Card 3: Midnight R&B -->
+<div class="relative overflow-hidden h-28 rounded-xl bg-gradient-to-br from-[#581c87] via-surface-container-high to-surface-container-low p-space-sm flex flex-col justify-between shadow-md active:scale-[0.98] transition-all cursor-pointer group">
+<div class="z-10 flex flex-col">
+<span class="font-label-lg text-label-lg font-extrabold text-white leading-tight drop-shadow-sm">Midnight R&amp;B</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Smooth &amp; Sultry</span>
+</div>
+<div class="absolute -right-3 -bottom-3 w-16 h-16 rounded-lg overflow-hidden rotate-[24deg] shadow-[0_8px_16px_rgba(0,0,0,0.6)] group-hover:rotate-[15deg] group-hover:scale-110 transition-all pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Velvet silhouette portrait bathed in deep violet and warm fuchsia neon studio rim light with subtle smoke effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsawOeHS3im4CE7PzF6YxvReQ-zx_Xkpa7ufg8my3fMhjXt4X8xZKKwU2MOaFm97hBpKQM2SrVILH6BzFegnKA-WYZqwOchbyDQRMPR783_vNDZmMhLZjOoNmdfhTzIkZlwMffXLfXN7cETjNhW5oq-RyLRNsG7cjnOmDmen66CVnXtMMWZ1fVbQt1bDPUqeV5mb9eRwB0iq7avEUiwmH4hx6-f0L4jtuclv_OrFk"/>
+</div>
+</div>
+<!-- Card 4: Hip-Hop & Trap -->
+<div class="relative overflow-hidden h-28 rounded-xl bg-gradient-to-br from-[#3b0764] via-surface-container-high to-surface-container-low p-space-sm flex flex-col justify-between shadow-md active:scale-[0.98] transition-all cursor-pointer group">
+<div class="z-10 flex flex-col">
+<span class="font-label-lg text-label-lg font-extrabold text-white leading-tight drop-shadow-sm">Hip-Hop &amp; 808</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sub-bass Heavy</span>
+</div>
+<div class="absolute -right-3 -bottom-3 w-16 h-16 rounded-lg overflow-hidden rotate-[24deg] shadow-[0_8px_16px_rgba(0,0,0,0.6)] group-hover:rotate-[15deg] group-hover:scale-110 transition-all pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Vintage cassette tape exploding into glowing violet particle dust with neon soundwave ripples on obsidian background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuLrrPAfRtmbc6MpUT2mzdiHtsZftmfBHtSPysfNFJNX4f3xfoEbD48s69-o-QgypCvUZ98O1KXv_R9Q6eaOf5T5h0lhGH5wsp-43r6H6OyfgfMQ1afr0Y58HaoZjxTLNct34EmiRnxnwAFnBi7qthxK92Wf-XEaklJhJQZArJhKUN-46YUGrKJbong-1SOZ91ROraR6XHf114JMeZjd-nnm6fnSxt0h70nAPelWM"/>
+</div>
+</div>
+<!-- Card 5: Chill & Ambient -->
+<div class="relative overflow-hidden h-28 rounded-xl bg-gradient-to-br from-surface-container-highest via-surface-container to-surface-container-low p-space-sm flex flex-col justify-between shadow-md active:scale-[0.98] transition-all cursor-pointer group">
+<div class="z-10 flex flex-col">
+<span class="font-label-lg text-label-lg font-extrabold text-white leading-tight drop-shadow-sm">Chill &amp; Ambient</span>
+<span class="font-label-sm text-label-sm text-outline">Focus &amp; Dream</span>
+</div>
+<div class="absolute -right-3 -bottom-3 w-16 h-16 rounded-lg overflow-hidden rotate-[24deg] shadow-[0_8px_16px_rgba(0,0,0,0.6)] group-hover:rotate-[15deg] group-hover:scale-110 transition-all pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Ethereal floating crystal islands over a misty purple twilight ocean with soft bioluminescent flora" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB08TFHuh92nA1q6rykCjVmgi4na8oYRVfDJqrOf8qvLb2xIQ05qzJKK2KpavbqxDU_UBybT96zKGX91N3C7X9Rc-bEA1_VSoH2mzFm2noUoKTnpwQvisQyK-NCObTe1-zQkHjB2qbHIOra0a0W9u2-keh1wxnUiZiJ0lqwK9K0-qtea0fsbwOWoeOJgmxbDaqAdd_QCOtIL8zqjYgWrq7o5XaDAkmGHWPSABWlb8U"/>
+</div>
+</div>
+<!-- Card 6: Lossless Master Files -->
+<div class="relative overflow-hidden h-28 rounded-xl bg-gradient-to-br from-primary-container via-surface-container-high to-surface-container-lowest p-space-sm flex flex-col justify-between shadow-md active:scale-[0.98] transition-all cursor-pointer group">
+<div class="z-10 flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-label-lg text-label-lg font-extrabold text-white leading-tight drop-shadow-sm">Lossless Studio</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed font-bold">24-bit / 192kHz</span>
+</div>
+<span class="z-10 inline-flex items-center self-start px-1.5 py-0.5 rounded-full bg-surface-container-lowest/80 text-primary font-label-sm text-[9px] font-extrabold shadow-sm">
+          FLAC MASTER
+        </span>
+<div class="absolute -right-3 -bottom-3 w-16 h-16 rounded-lg overflow-hidden rotate-[24deg] shadow-[0_8px_16px_rgba(0,0,0,0.6)] group-hover:rotate-[15deg] group-hover:scale-110 transition-all pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Macro view of a high-end audiophile vinyl turntable needle stylus riding the grooves of an illuminated electric purple translucent vinyl record" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpSQIw0csw5xPHR112T19heWTDL-o0GeXL6mKbqLD0ZoBQxOEmJH6SuYWVU0KRtwiOINhoO99mojmZqHxQbS0rjks6CVTeZR_wzqdW8vNzF_6Ft4MO4F6TracCimZCLVGmgvRrvPzj34LBayF_b9VgIJenHwAmsIsnBJqFG4ZxEXhL15VS9X1vqebjUqUYYpynFw4KSe1rmz2cyCBeIvtgO3JFur5KxPuZ2Rw49AA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive script for category pills, input clear, and chip dismissal -->
+<script>
+    (function initSearchMicroInteractions() {
+      const searchInput = document.getElementById('search-input');
+      const clearBtn = document.getElementById('clear-btn');
+      const searchIcon = document.getElementById('search-icon');
+      const recentChipsContainer = document.getElementById('recent-chips');
+      const clearAllRecentsBtn = document.getElementById('clear-all-recents');
+      const recentSection = document.getElementById('recent-searches-section');
+
+      // Clear input button
+      clearBtn?.addEventListener('click', () => {
+        if (searchInput) {
+          searchInput.value = '';
+          searchInput.focus();
+        }
+      });
+
+      // Dynamic search icon color on typing
+      searchInput?.addEventListener('input', (e) => {
+        if (searchIcon) {
+          if (e.target.value.trim().length > 0) {
+            searchIcon.classList.remove('text-outline');
+            searchIcon.classList.add('text-primary');
+          } else {
+            searchIcon.classList.add('text-outline');
+            searchIcon.classList.remove('text-primary');
+          }
+        }
+      });
+
+      // Category tabs active switch
+      const categoryTabs = document.querySelectorAll('.category-pill');
+      categoryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          categoryTabs.forEach(t => {
+            t.className = 'category-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface flex-shrink-0 active:scale-95 transition-all';
+          });
+          tab.className = 'category-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-gradient-to-r from-secondary-container to-primary-container text-white shadow-[0_0_14px_rgba(183,109,255,0.4)] flex-shrink-0 active:scale-95 transition-all';
+        });
+      });
+
+      // Individual chip deletion
+      recentChipsContainer?.addEventListener('click', (e) => {
+        const deleteBtn = e.target.closest('.chip-delete');
+        if (deleteBtn) {
+          const chip = deleteBtn.closest('.group');
+          if (chip) {
+            chip.style.opacity = '0';
+            chip.style.transform = 'scale(0.85)';
+            setTimeout(() => {
+              chip.remove();
+              if (recentChipsContainer.children.length === 0 && recentSection) {
+                recentSection.remove();
+              }
+            }, 180);
+          }
+        }
+      });
+
+      // Clear all recents
+      clearAllRecentsBtn?.addEventListener('click', () => {
+        if (recentSection) {
+          recentSection.style.transition = 'all 0.25s ease';
+          recentSection.style.opacity = '0';
+          recentSection.style.transform = 'translateY(-8px)';
+          setTimeout(() => {
+            recentSection.remove();
+          }, 250);
+        }
+      });
+    })();
+  </script>
+</div></main><div class="fixed bottom-0 w-full z-50 pointer-events-none pb-safe"><div class="pointer-events-auto px-gutter-mobile mb-space-xs"><div class="relative overflow-hidden rounded-xl bg-surface-container-high/90 backdrop-blur-xl shadow-[0_-6px_24px_rgba(183,109,255,0.18)]"><div class="flex items-center justify-between p-space-xs gap-space-sm"><a class="flex items-center gap-space-sm min-w-0 flex-1" data-path="now-playing" href="#"><div class="w-10 h-10 rounded-lg bg-surface-container-highest flex-shrink-0 flex items-center justify-center overflow-hidden shadow-inner"><span class="material-symbols-outlined text-primary text-[22px]">album</span></div><div class="flex flex-col min-w-0 text-left"><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">Chromatic Flow</span><span class="flex items-end gap-[1px] h-3 w-3 flex-shrink-0 pb-[1px]"><span class="w-[2px] h-full bg-primary rounded-full animate-pulse"></span><span class="w-[2px] h-2 bg-primary rounded-full animate-ping"></span><span class="w-[2px] h-full bg-primary rounded-full animate-pulse"></span></span></div><span class="font-body-sm text-body-sm text-on-surface-variant truncate">Aura Echoes</span></div></a><div class="flex items-center gap-space-xs flex-shrink-0 pr-space-xs"><button class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary active:scale-95 transition-colors"><span class="material-symbols-outlined text-[22px]">favorite</span></button><button class="w-11 h-11 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(183,109,255,0.45)] active:scale-90 transition-transform"><span class="material-symbols-outlined text-[24px]">pause</span></button><button class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-95 transition-colors"><span class="material-symbols-outlined text-[22px]">skip_next</span></button></div></div><div class="w-full h-1 bg-surface-container-lowest"><div class="h-full bg-primary-container rounded-r-full shadow-[0_0_8px_rgba(183,109,255,0.6)] w-3/5"></div></div></div></div><nav class="pointer-events-auto bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.4)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-gutter-mobile"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm tracking-tight mt-[2px]">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-all active:scale-95 text-primary font-bold" data-path="search" href="#"><span class="material-symbols-outlined text-[24px]">search</span><span class="font-label-sm text-label-sm tracking-tight mt-[2px]">Search</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="library" href="#"><span class="material-symbols-outlined text-[24px]">library_music</span><span class="font-label-sm text-label-sm tracking-tight mt-[2px]">Library</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-label-sm tracking-tight mt-[2px]">Profile</span></a></div><div class="flex justify-center pb-2 pt-1"><div class="w-32 h-1 bg-surface-container-highest rounded-full"></div></div></nav></div></body></html>

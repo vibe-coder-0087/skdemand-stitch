@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#2c0051", "on-surface-variant": "#cfc2d6", "outline": "#988d9f", "on-surface": "#e4e1e6", "error-container": "#93000a", "on-secondary-fixed-variant": "#5a00c6", "primary": "#ddb7ff", "tertiary": "#dcb8ff", "surface-container": "#1f1f22", "surface-container-lowest": "#0e0e11", "on-tertiary-container": "#3f0072", "tertiary-fixed-dim": "#dcb8ff", "on-secondary": "#3f008e", "outline-variant": "#4d4354", "surface-bright": "#39393c", "inverse-on-surface": "#303033", "surface-dim": "#131316", "error": "#ffb4ab", "on-primary-fixed-variant": "#6900b3", "surface-container-high": "#2a2a2d", "on-background": "#e4e1e6", "on-error-container": "#ffdad6", "on-primary-container": "#400071", "secondary-fixed": "#eaddff", "on-error": "#690005", "on-tertiary": "#480081", "on-tertiary-fixed-variant": "#6700b5", "secondary-fixed-dim": "#d2bbff", "background": "#131316", "surface-container-highest": "#353438", "surface": "#131316", "on-secondary-fixed": "#25005a", "primary-fixed-dim": "#ddb7ff", "on-primary": "#490080", "inverse-surface": "#e4e1e6", "secondary": "#d2bbff", "primary-fixed": "#f0dbff", "tertiary-fixed": "#efdbff", "surface-container-low": "#1b1b1e", "primary-container": "#b76dff", "tertiary-container": "#b56eff", "inverse-primary": "#842bd2", "surface-variant": "#353438", "secondary-container": "#6001d1", "surface-tint": "#ddb7ff", "on-secondary-container": "#c9aeff", "on-primary-fixed": "#2c0051" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "margin": "1.5rem" }, "fontFamily": { "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "display-lg": ["48px", { "lineHeight": "56px", "fontWeight": "800" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#131316;color:#e4e1e6;}body{overscroll-behavior-y:none;min-height:100vh;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}*{-ms-overflow-style:none;scrollbar-width:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)]"><div class="flex items-center justify-between px-margin-mobile h-6 text-on-surface-variant font-label-sm text-label-sm select-none"><span class="font-semibold tracking-tight text-on-surface">9:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[14px]">wifi</span><span class="material-symbols-outlined text-[14px]">battery_full</span></div></div><div class="h-14 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button class="w-11 h-11 -ml-space-xs rounded-full flex items-center justify-center text-on-surface hover:text-primary transition-colors active:scale-95" onclick="history.back()"><span class="material-symbols-outlined">arrow_back</span></button><img alt="SK Demand Brand Logo" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VT79UDXf7PTy8gyxBmzyFY69HYSQlLozOAs7WxmTz6C_dOt5LCVoZy_NvqdL-i5hDZPhQWmG8UwJM34snHgXWrgaqiSmwhnjwpTTFIFZRIJCR0gQ00Lsdob0JTDE-h2OtudzhTj0mL3Pv92fPB2IQbp54a_KUt9_xBAQ0uYCrO7av5lPAtj40OJWbSx4Q79eyKWPkyrfziNZX7dMrOgnN_p914EW-kSdDkY-o_nso"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Playlist Detail</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><button class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors active:scale-95"><span class="material-symbols-outlined">more_vert</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/40 ml-space-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGjNAcLCFEybkMJCk01NXyuJ5Hpjpa-HSUnMdOqMQCajojX_EHm2l752JRo8APsJiZNGCCNYRrszcyztYIeZdablxyW3oeAjf8g3wJxx7VvS02sM-ZnwsM9h07GocOvfMADEB9_DZD0oLNmteWnyJjlSKpthR1IKwlKd8IlqRxyMhCvPBYITyw7Rg2fkUG42WaCIkfAZ2KPzDnjRU2tE7uixRsFWzr8ssKVtknqRo"/></div></div></header><main class="flex-1 w-full bg-surface pt-20 pb-safe px-margin-mobile flex flex-col"><div class="flex flex-col w-full pb-28 space-y-5">
+<!-- Ambient Atmospheric Glow Backplane -->
+<div class="relative w-full">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 w-72 h-72 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Playlist Hero Showcase Card -->
+<div class="flex flex-col items-center text-center px-gutter-mobile pt-2">
+<!-- Vinyl Artwork with Glow & Depth -->
+<div class="relative group cursor-pointer mb-5">
+<div class="absolute inset-0 bg-primary-container/30 rounded-2xl blur-xl transform scale-95 group-hover:scale-105 transition-transform duration-500"></div>
+<div class="relative w-56 h-56 rounded-2xl overflow-hidden shadow-2xl bg-surface-container-highest">
+<img class="w-full h-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Futuristic synthwave album cover with a glowing geometric 3D neon purple and cyan crystal prism floating against deep space galaxy nebulas with starry cosmic grid horizon, vibrant purple violet lighting, cyberpunk typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBftsDNxnXKK_LnWC-cyXOWTBv48tjYW8hkx0Gx4iHH9Qiou1ibi-gsTr9daFTwQb2xd1BOdkM3ebyDqsBzqoShD6J9_4xgz45WyrMB2uvqb8hRgeY5L0YeT5kQwejRxLlJLbVZ1psM6DC1Q_r7Au2jBPbqz0x-9-i4m17tVgSL42bkvTFS-vKCTMx8EUCAbIjfdEj8u6Cjzm8UcRILplmQElWurZIbKiah2iI1_W0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent opacity-60"></div>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">graphic_eq</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">FLAC 24-bit</span>
+</div>
+</div>
+</div>
+<!-- Playlist Details Metadata -->
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest bg-primary-container/20 px-2 py-0.5 rounded-full">Official Curated Mix</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight leading-snug">
+        Cybernetic Void: Official Tour Mix
+      </h2>
+<!-- Curator & Quality Meta -->
+<div class="flex items-center justify-center gap-1.5 mt-2 flex-wrap">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">By SK Demand Editorial</span>
+<span class="material-symbols-outlined text-primary text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-outline-variant text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">48 songs, 3 hr 12 min</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim bg-surface-container-high px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">all_inclusive</span> Lossless Master Quality
+        </span>
+</div>
+</div>
+</div>
+<!-- Interactive Action Command Bar -->
+<div class="flex items-center justify-between px-gutter-mobile py-2 bg-surface-container-lowest/50 backdrop-blur-md rounded-2xl">
+<div class="flex items-center gap-1">
+<!-- Download Toggle Pill Button -->
+<button aria-label="Toggle offline download" class="flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface" id="downloadToggleBtn">
+<span class="material-symbols-outlined text-[18px] text-tertiary" id="downloadIcon" style="font-variation-settings: 'FILL' 1;">download_done</span>
+<span class="font-label-md text-label-md text-on-surface">Downloaded</span>
+</button>
+<!-- Favorite / Add to Library Button -->
+<button aria-label="Add to library" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary active:scale-95 transition-all" id="saveLibraryBtn">
+<span class="material-symbols-outlined text-[22px]" id="libraryIcon">library_add_check</span>
+</button>
+<!-- Share Action Button -->
+<button aria-label="Share playlist" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+<div class="flex items-center gap-3">
+<!-- Shuffle Trigger Toggle -->
+<button aria-label="Shuffle playback" class="w-10 h-10 rounded-full flex items-center justify-center text-primary active:scale-90 transition-all" id="shuffleBtn">
+<span class="material-symbols-outlined text-[22px]">shuffle</span>
+</button>
+<!-- Massive Floating Playback Primary Master Button -->
+<button aria-label="Play playlist" class="relative group w-14 h-14 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg shadow-primary-container/40 hover:scale-105 active:scale-95 transition-all duration-300" id="mainPlayBtn">
+<span class="absolute inset-0 rounded-full bg-primary-container blur-sm opacity-50 group-hover:opacity-100 transition-opacity"></span>
+<span class="material-symbols-outlined relative text-[30px] ml-0.5" id="mainPlayIcon" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Filter & Search Quick Strip -->
+<div class="flex items-center justify-between px-gutter-mobile gap-2">
+<div class="relative flex-1">
+<div class="flex items-center bg-surface-container-low rounded-full px-3 py-1.5 focus-within:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-outline text-[18px]">search</span>
+<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none ml-2" placeholder="Search in playlist" type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<button class="flex items-center gap-1 py-1.5 px-3 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px]">swap_vert</span>
+<span class="font-label-md text-label-md">Default</span>
+</button>
+</div>
+</div>
+<!-- Audio Tracks Fluid Stack -->
+<div class="flex flex-col space-y-1.5 px-gutter-mobile" id="tracklistContainer">
+<!-- Track 1: Currently Active Playing Track -->
+<div class="track-row group relative flex items-center justify-between p-2.5 rounded-xl bg-surface-container-high/60 shadow-md backdrop-blur-sm cursor-pointer transition-all active:scale-[0.99]" data-playing="true">
+<div class="flex items-center gap-3 min-w-0 flex-1">
+<!-- Live Animated Waveform EQ Glyphs -->
+<div class="w-8 flex items-center justify-center flex-shrink-0">
+<div class="flex items-end justify-center gap-0.5 h-4 w-4">
+<span class="w-1 bg-primary rounded-full animate-pulse h-3"></span>
+<span class="w-1 bg-primary rounded-full animate-bounce h-4" style="animation-duration: 0.6s;"></span>
+<span class="w-1 bg-primary rounded-full animate-pulse h-2" style="animation-duration: 0.9s;"></span>
+</div>
+</div>
+<div class="relative w-11 h-11 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Album art close up with intense glowing purple cybernetic crystalline cube in dark space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXbU2HQO18rLOcPBkCVUfoLjnjjRrJXX1FWx9PrURHpZLYUGaoNqod3PN4SWcSVb4QTj4i8T6zTX4uJG8ikIylZr-je0Lg69CQhdLmw0PhSSzy7lV69oTH8Zf_EyH1WOHb5oPLBNlcgm8pCayJJW-T2FIU8QbrEJ9WKC45z9a5clMJVN7r-z2ZHmA6PiGL1-6N4nG9-ay7JjIV4SiUQa7MJHa_nwFgCbxt0VG57bQ"/>
+<div class="absolute inset-0 bg-primary-container/20 mix-blend-screen"></div>
+</div>
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-lg text-label-lg text-primary truncate flex items-center gap-1.5">
+            Cybernetic Void (Original Mix)
+          </span>
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-label-sm text-label-sm bg-primary/20 text-primary px-1 rounded">LOSSLESS</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Neon Pulsar</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<span class="font-label-sm text-label-sm text-primary font-semibold tabular-nums">3:45</span>
+<button aria-label="Track options" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Track 2 -->
+<div class="track-row group relative flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container/60 transition-all cursor-pointer active:scale-[0.99]" data-playing="false">
+<div class="flex items-center gap-3 min-w-0 flex-1">
+<div class="w-8 flex items-center justify-center flex-shrink-0">
+<span class="font-label-md text-label-md text-outline font-semibold tabular-nums">2</span>
+</div>
+<div class="w-11 h-11 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Prismatic spectral prism refraction with deep violet and ultra neon beams in cybernetic grid environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzacv6hXY5X_cOnRItycaEsqOz5m3wMhqS-DZpwRNvPt-7AN9Htf1_XlkI98RRpriLLWEcsZZcqArB10c_o0tgYKFlT5rxxUEuZVec14bViJzY0jE6EC5RiX6fQW8bLooySZvp--xUxAbXl27T0hxlanwZID3k-lgSzUEATBlkoj1SjPJFSyN6j9JDBSP0mDKkRXlDGkW3vdMIjf2BDGmMNakhdA2MTOGm37h-DAo"/>
+</div>
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors">
+            Holographic Prism
+          </span>
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-1 rounded">FLAC</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Neon Pulsar</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<span class="font-label-sm text-label-sm text-outline tabular-nums">4:12</span>
+<button aria-label="Track options" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Track 3 -->
+<div class="track-row group relative flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container/60 transition-all cursor-pointer active:scale-[0.99]" data-playing="false">
+<div class="flex items-center gap-3 min-w-0 flex-1">
+<div class="w-8 flex items-center justify-center flex-shrink-0">
+<span class="font-label-md text-label-md text-outline font-semibold tabular-nums">3</span>
+</div>
+<div class="w-11 h-11 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Cosmic warp speed light trails in deep purple and magenta with distant celestial galaxy background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUyFZ640Fr-JypzXTNYSs1iSJMNSgQp7SJpDS2Ug7HDlRFsgRY4oaz09FuLAtEY5og05IQJ16Qi29TU34M3dm5cfSN8jy4G7HkXSI8TJpyWKCiLEat2k5DgBim73Bb7UeaaPNnpcXVZN8HWqXkncZN-YXVbgC0SyRVu11YZpgZ2MMrRsFuqkEYMUnlveQAY6IACfvsaq9o8sL_n-LuxeU36-jfVSALae9d8OB2uS0"/>
+</div>
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors">
+            Starlight Overdrive
+          </span>
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-1 rounded">FLAC</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Cyber Pulse, Kavit</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<span class="font-label-sm text-label-sm text-outline tabular-nums">3:20</span>
+<button aria-label="Track options" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Track 4 -->
+<div class="track-row group relative flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container/60 transition-all cursor-pointer active:scale-[0.99]" data-playing="false">
+<div class="flex items-center gap-3 min-w-0 flex-1">
+<div class="w-8 flex items-center justify-center flex-shrink-0">
+<span class="font-label-md text-label-md text-outline font-semibold tabular-nums">4</span>
+</div>
+<div class="w-11 h-11 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Abstract dark sub-bass sound visualizer geometry glowing with violet neon energy and dark atmospheric fog" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCszE3GfvoxbPSikUgG9LyS2aj7bnnGsQWvwwBGc7lwskvh-CqiiHxNuprCdjIREwItSyTMXEch0WxrYDXuC6yrvLrQ0mDnREBsUsJFzZltRmsMzWv-XSvyW3GPhYHdDLpcODO3TvG-TCQj7bYyI0JpMDITj1YRQCPAJkTBNQ7tYfsE6zh20k7wvSLQN3yvUWGEm9Csg5RZCEhTp-kXbsdSe8gwFUHgd02FI0ZdeFA"/>
+</div>
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors">
+            HyperDrive Core
+          </span>
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Bass Culture</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<span class="font-label-sm text-label-sm text-outline tabular-nums">4:50</span>
+<button aria-label="Track options" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Track 5 -->
+<div class="track-row group relative flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container/60 transition-all cursor-pointer active:scale-[0.99]" data-playing="false">
+<div class="flex items-center gap-3 min-w-0 flex-1">
+<div class="w-8 flex items-center justify-center flex-shrink-0">
+<span class="font-label-md text-label-md text-outline font-semibold tabular-nums">5</span>
+</div>
+<div class="w-11 h-11 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Futuristic neon wireframe sunset landscape with mountains bathed in purple dusk and glowing synth retro lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-4nyLHdc71Xn1AiaUxZ59bVf2A0a1KLarTDic3FUtwETDcF3eH4hNhmTF0NgxHp1xcAxSA4tZpkEDVlyKAxesoaP_A2C5v3zcYfG67pPg__YWrB4SgdTz1vSRDntrisRXs9dFiOsyqOrPjVsYVzwlPL-uOuHHWQ-jE6D9xVzP-X2NCNhn_8uFcIGSY033RjfBMySbRdAQRCF4Z6fA6XIOlHd3acnFnmZc-Ki4Fa8"/>
+</div>
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors">
+            Violet Horizon
+          </span>
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Neon Pulsar</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<span class="font-label-sm text-label-sm text-outline tabular-nums">3:55</span>
+<button aria-label="Track options" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Persistent Docked Fluid Mini Player -->
+<div class="fixed bottom-3 left-3 right-3 z-40">
+<div class="relative bg-surface-container-highest/95 backdrop-blur-2xl rounded-2xl p-2.5 shadow-2xl flex flex-col gap-2 overflow-hidden">
+<!-- Top Micro Glowing Track Progress Line -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-surface-variant">
+<div class="h-full bg-gradient-to-r from-primary to-primary-container rounded-r-full transition-all duration-300" id="miniScrubber" style="width: 58%;"></div>
+</div>
+<div class="flex items-center justify-between gap-3 pt-0.5">
+<!-- Playing Track Context Mini -->
+<div class="flex items-center gap-2.5 min-w-0 flex-1 cursor-pointer">
+<div class="relative w-10 h-10 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Abstract fluid chromatic violet audio wave artwork with vivid magenta highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn2x7BRff6OQa_0hxIDKCtsX6XuD5FPqARaYJPW0okq7OEKrr5szAUspTDrL6mR9LgfqAQadS-DjixWqMbcBvNk8u1yJsMTVId66pWNcCYIfyVtMbMztiy6oNFEhMaEaYiIp2J4_L0JwTt6mnFmXh526WDVVM6kbagdfZ7FE016ueTeUioUnKEe-2rrCrLQPiISmffnqn9LCG_H3ypJUqN6N4vMAl2hL-9zDpC534"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">
+              Chromatic Flow
+            </span>
+<span class="font-body-sm text-body-sm text-primary flex items-center gap-1 truncate">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+              Aura Echoes • Studio Monitor
+            </span>
+</div>
+</div>
+<!-- Controls: Bluetooth/Cast, Play/Pause, Next -->
+<div class="flex items-center gap-1 flex-shrink-0">
+<!-- Cast / Device route -->
+<button aria-label="Playback device" class="w-8 h-8 rounded-full flex items-center justify-center text-primary active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[19px]">speaker_group</span>
+</button>
+<!-- Toggle Mini Play/Pause -->
+<button aria-label="Play or pause" class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md active:scale-90 transition-transform" id="miniPlayBtn">
+<span class="material-symbols-outlined text-[20px]" id="miniPlayIcon" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+<!-- Next Track -->
+<button aria-label="Skip to next song" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[22px]">skip_next</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (() => {
+    // Micro-interactions state handling
+    let isMasterPlaying = true;
+    let isDownloaded = true;
+    let isSaved = true;
+    let isShuffled = true;
+
+    const mainPlayBtn = document.getElementById('mainPlayBtn');
+    const mainPlayIcon = document.getElementById('mainPlayIcon');
+    const miniPlayBtn = document.getElementById('miniPlayBtn');
+    const miniPlayIcon = document.getElementById('miniPlayIcon');
+    const downloadToggleBtn = document.getElementById('downloadToggleBtn');
+    const downloadIcon = document.getElementById('downloadIcon');
+    const saveLibraryBtn = document.getElementById('saveLibraryBtn');
+    const libraryIcon = document.getElementById('libraryIcon');
+    const shuffleBtn = document.getElementById('shuffleBtn');
+
+    function updatePlayState(playing) {
+      isMasterPlaying = playing;
+      const iconName = isMasterPlaying ? 'pause' : 'play_arrow';
+      if (mainPlayIcon) mainPlayIcon.textContent = iconName;
+      if (miniPlayIcon) miniPlayIcon.textContent = iconName;
+    }
+
+    if (mainPlayBtn) {
+      mainPlayBtn.addEventListener('click', () => {
+        updatePlayState(!isMasterPlaying);
+      });
+    }
+
+    if (miniPlayBtn) {
+      miniPlayBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        updatePlayState(!isMasterPlaying);
+      });
+    }
+
+    if (downloadToggleBtn) {
+      downloadToggleBtn.addEventListener('click', () => {
+        isDownloaded = !isDownloaded;
+        if (isDownloaded) {
+          downloadIcon.textContent = 'download_done';
+          downloadIcon.className = 'material-symbols-outlined text-[18px] text-tertiary';
+        } else {
+          downloadIcon.textContent = 'download';
+          downloadIcon.className = 'material-symbols-outlined text-[18px] text-outline';
+        }
+      });
+    }
+
+    if (saveLibraryBtn) {
+      saveLibraryBtn.addEventListener('click', () => {
+        isSaved = !isSaved;
+        if (isSaved) {
+          libraryIcon.textContent = 'library_add_check';
+          saveLibraryBtn.classList.add('text-primary');
+          saveLibraryBtn.classList.remove('text-on-surface-variant');
+        } else {
+          libraryIcon.textContent = 'add_circle_outline';
+          saveLibraryBtn.classList.remove('text-primary');
+          saveLibraryBtn.classList.add('text-on-surface-variant');
+        }
+      });
+    }
+
+    if (shuffleBtn) {
+      shuffleBtn.addEventListener('click', () => {
+        isShuffled = !isShuffled;
+        if (isShuffled) {
+          shuffleBtn.classList.add('text-primary');
+          shuffleBtn.classList.remove('text-outline');
+        } else {
+          shuffleBtn.classList.remove('text-primary');
+          shuffleBtn.classList.add('text-outline');
+        }
+      });
+    }
+  })();
+</script></main></body></html>
